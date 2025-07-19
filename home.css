@@ -1,0 +1,30 @@
+body {
+    background-color: #E1ECF8;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 18px; 
+}
+h1, h2, h3, h4, h5, h6, header {
+    font-size: 20px; 
+    color: #3875B8;     
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+.content {
+    margin: auto; 
+    max-width: 800px; 
+    padding: 5px;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav {
+    display: flex; 
+    gap: 20px; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
