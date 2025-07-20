@@ -1,12 +1,12 @@
 body {
-    background-color: #E1ECF8;
+    background-color: #FFF5DC;
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     font-size: 18px; 
 }
 h1, h2, h3, h4, h5, h6, header {
     font-size: 20px; 
-    color: #3875B8;     
+    color: #536907;     
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -39,4 +39,11 @@ nav {
     gap: 20px; 
     justify-content: space-between;
     align-items: start; 
+}
+
+nav > a{
+    text-decoration: none; 
+    font-weight: 200;
+    color: #536907; 
+    font-size: 18px; 
 }
