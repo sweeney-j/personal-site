@@ -9,10 +9,20 @@ h1, h2, h3, h4, h5, h6, header {
     color: #3875B8;     
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
+    margin-bottom: 0.5em;
 }
+
+h2 {
+    font-size: 18px; 
+    font-weight: 200;
+    margin-top: 0; 
+    padding: 0; 
+}
+
+
 .content {
     margin: auto; 
-    max-width: 800px; 
+    max-width: 650px; 
     padding: 5px;
 }
 
@@ -20,11 +30,13 @@ header {
     display: flex; 
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap; 
+    column-gap: 16em; 
 }
 
 nav {
     display: flex; 
     gap: 20px; 
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: start; 
 }
