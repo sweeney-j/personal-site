@@ -1,12 +1,12 @@
 body {
-    background-color: #FFF5DC;
+    background-color: #F0E5D8;
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     font-size: 18px; 
 }
 h1, h2, h3, h4, h5, h6, header {
     font-size: 20px; 
-    color: #536907;     
+    color: #9B2226;     
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -44,6 +44,6 @@ nav {
 nav > a{
     text-decoration: none; 
     font-weight: 200;
-    color: #536907; 
+    color: #9B2226; 
     font-size: 18px; 
 }
