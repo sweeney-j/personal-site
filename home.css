@@ -4,6 +4,7 @@ body {
     font-weight: 300;
     font-size: 18px; 
 }
+
 h1, h2, h3, h4, h5, h6, header {
     font-size: 20px; 
     color: #9B2226;     
@@ -18,7 +19,6 @@ h2 {
     margin-top: 0; 
     padding: 0; 
 }
-
 
 .content {
     margin: auto; 
@@ -46,4 +46,21 @@ nav > a{
     font-weight: 200;
     color: #9B2226; 
     font-size: 18px; 
+    font-style: normal; 
+}
+
+a { 
+    text-decoration: none; 
+    color: #9B2226; 
+    font-style: italic; 
+}
+
+footer {
+    font-size: 15px; 
+}
+
+footer > a { 
+    text-decoration: none; 
+    color: #9B2226; 
+    font-style: normal; 
 }
