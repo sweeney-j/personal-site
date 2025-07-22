@@ -41,7 +41,7 @@ nav {
     align-items: start; 
 }
 
-nav > a{
+.nav-links {
     text-decoration: none; 
     font-weight: 200;
     color: #9B2226; 
