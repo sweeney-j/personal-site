@@ -58,9 +58,3 @@ a {
 footer {
     font-size: 15px; 
 }
-
-footer > a { 
-    text-decoration: none; 
-    color: #9B2226; 
-    font-style: normal; 
-}
