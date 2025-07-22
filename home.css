@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap; 
-    column-gap: 16em; 
+    column-gap: 15em; /* This is very fragile */ 
 }
 
 nav {
