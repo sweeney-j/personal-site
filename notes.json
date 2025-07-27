@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {
+            "title": "Example Title", 
+            "description": "This is example preview text to test my automated system",
+            "date":"27.07.2025"
+        },
+        {
+            "title": "Example Title 2.0", 
+            "description": "This is example preview text to test my automated system",
+            "date":"27.07.2025"
+        }
+    ]
+}

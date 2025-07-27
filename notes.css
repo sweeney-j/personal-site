@@ -1,4 +1,4 @@
-.posts {
+#posts {
     opacity: 0; 
     animation: fadeIn 2s forwards; 
 }
