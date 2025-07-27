@@ -7,7 +7,7 @@ fetch('notes.json')
             var blogClassName = `<div class="blog-${uniqueId}"></div>`;
             postList.innerHTML += blogClassName;
             var currentBlog = document.getElementsByClassName(`blog-${uniqueId}`); 
-            var blogTitle = `<h2 class="blog-heading">${post.title}</h2>`; 
+            var blogTitle = `<a href="thoughts/blog-${uniqueId}"<h2 class="blog-heading">${post.title}</h2></a>`; 
             var blogAbout = `<p class="blog-about">${post.description}</p>`;
             currentBlog[0].innerHTML = blogTitle + blogAbout; 
             uniqueId += 1; 
