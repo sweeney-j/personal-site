@@ -1,9 +1,9 @@
 const fs = require('node:fs');
 const marked = require('marked');
 
-const markdownPagePath = '../thoughts/markdown-pages'; 
-const htmlPagePath = '../thoughts/html-pages'; 
-const jsonPath = '../notes.json'; 
+const markdownPagePath = '../pages/thoughts/markdown-pages'; 
+const htmlPagePath = '../pages/thoughts/html-pages'; 
+const jsonPath = '../configuration/notes.json'; 
 
 function loadJson() {
     return JSON.parse(fs.readFileSync(jsonPath)); 

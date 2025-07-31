@@ -1,4 +1,4 @@
-fetch('notes.json')
+fetch('/configuration/notes.json')
     .then(res => res.json())
     .then(data => { 
         const postList = document.getElementById("posts"); 
