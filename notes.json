@@ -1,8 +1,8 @@
 {
   "posts": [
     {
-      "title": "Testing this heavenly templating engine",
-      "description": "This is a description of the test!",
+      "title": "Salesforce - My Thoughts",
+      "description": "Is Salesforce worth the hype?",
       "date": "2025-07-31",
       "filePath": "../thoughts/html-pages/salesforce.html",
       "name": "salesforce"
