@@ -1,5 +1,7 @@
+@import 'color-scheme.css'; 
+
 body {
-    background-color: #F0E5D8;
+    background-color: var(--background);
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     font-size: 18px; 
@@ -7,7 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, header {
     font-size: 20px; 
-    color: #9B2226;     
+    color: var(--headers);     
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -44,14 +46,14 @@ nav {
 .nav-links {
     text-decoration: none; 
     font-weight: 200;
-    color: #9B2226; 
+    color: var(--links); 
     font-size: 18px; 
     font-style: normal; 
 }
 
 .homepage-links { 
     text-decoration: none; 
-    color: #9B2226; 
+    color: var(--links); 
     font-style: italic; 
 }
 

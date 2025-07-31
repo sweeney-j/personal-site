@@ -1,3 +1,5 @@
+@import 'color-scheme.css'; 
+
 #posts {
     opacity: 0; 
     animation: fadeIn 2s forwards; 
@@ -8,7 +10,7 @@
   font-size: 24px; 
   text-decoration: none; 
   font-weight: normal;
-  color: #9B2226; 
+  color: var(--headers); 
 }
 
 @keyframes fadeIn {
