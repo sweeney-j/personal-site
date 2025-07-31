@@ -7,7 +7,8 @@ fetch('notes.json')
             var blogClassName = `<div class="blog-${uniqueId}"></div>`;
             postList.innerHTML += blogClassName;
             var currentBlog = document.getElementsByClassName(`blog-${uniqueId}`); 
-            var blogTitle = `<a href="thoughts/blog-${uniqueId}"<h2 class="blog-heading">${post.title}</h2></a>`; 
+            // TODO: The path in the json should be relative to this file 
+            var blogTitle = `<a href="thoughts/html-pages/${post.name}"<h2 class="blog-heading">${post.title}</h2></a>`; 
             var blogAbout = `<p class="blog-about">${post.description}</p>`;
             currentBlog[0].innerHTML = blogTitle + blogAbout; 
             uniqueId += 1; 

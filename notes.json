@@ -1,7 +1,11 @@
 {
-    "posts": [
-        {
-            "name": "salesforce"
-        }
-    ]
+  "posts": [
+    {
+      "title": "Testing this heavenly templating engine",
+      "description": "This is a description of the test!",
+      "date": "2025-07-31",
+      "filePath": "../thoughts/html-pages/salesforce.html",
+      "name": "salesforce"
+    }
+  ]
 }

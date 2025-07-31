@@ -41,7 +41,34 @@ function copyBasePage(blogName) {
     fs.writeFileSync(`${htmlPagePath}/${blogName}.html`, baseFile); 
 }
 
+function updateJSON(title, description, date, filePath, name) {
+    const newPost = {
+        title: title, 
+        description: description, 
+        date: date, 
+        filePath: filePath,
+        name: name
+    }; 
+
+    const data = loadJson(); 
+    data.posts.push(newPost); 
+    fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
+}
+
 function main() {
+    const prompt = require('prompt-sync')(); 
+    const title = prompt("Title of new blog?"); 
+    const description = prompt("Description of the blog?"); 
+    const date = new Date().toISOString().slice(0,10); 
+    const name = retrieveUnpublished()[0].slice(0, -3); 
+    // Assuming only one post gets pushed at a time
+    const filePath = `${htmlPagePath}/${name}.html`; 
+    generateHTML(); 
+    // Order matters here: Marked it as published AFTER. 
+    updateJSON(title, description, date, filePath, name); 
+
+    //const { execSync } = require('child_process');
+    // execSync(`git add . && git commit -m "Add blog post: ${title}" && git push`);
 }
 
 if (require.main === module) {
