@@ -1,9 +1,7 @@
 {
     "posts": [
         {
-            "title": "Salesforce Commerce Cloud - My Opinion", 
-            "description": "Blog post coming soon",
-            "date":"27.07.2025"
+            "name": "salesforce"
         }
     ]
 }
