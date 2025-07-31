@@ -1,14 +1,11 @@
 {
-    "posts": [
-        {
-            "title": "Example Title", 
-            "description": "This is example preview text to test my automated system",
-            "date":"27.07.2025"
-        },
-        {
-            "title": "Example Title 2.0", 
-            "description": "This is example preview text to test my automated system",
-            "date":"27.07.2025"
-        }
-    ]
+  "posts": [
+    {
+      "title": "Salesforce - My Thoughts",
+      "description": "Is Salesforce worth the hype?",
+      "date": "2025-07-31",
+      "filePath": "../thoughts/html-pages/salesforce.html",
+      "name": "salesforce"
+    }
+  ]
 }
