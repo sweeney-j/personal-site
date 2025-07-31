@@ -1,5 +1,6 @@
-const fs = require('node:fs'); 
-const { marked } = require('marked'); 
+const fs = require('node:fs');
+const marked = require('marked');
+
 const markdownPagePath = '../thoughts/markdown-pages'; 
 const htmlPagePath = '../thoughts/html-pages'; 
 const jsonPath = '../notes.json'; 
@@ -27,11 +28,26 @@ function generateHTML() {
         const markdown = fs.readFileSync(`${markdownPagePath}/${post}`, 'utf8'); 
         const html = marked.parse(markdown); 
         const blogName = post.substring(0, post.length - 3); 
-        fs.writeFileSync(`${htmlPagePath}/${blogName}.html`, html); 
+        copyBasePage(blogName); 
+        const newPost = fs.readFileSync(`${htmlPagePath}/${blogName}.html`, 'utf8'); 
+        const finalPage = newPost.replace('__PLACEHOLDER__', html); 
+        fs.writeFileSync(`${htmlPagePath}/${blogName}.html`, finalPage); 
     }); 
 }
 
-generateHTML(); 
+// Copies the base page format and writes it under a new name. 
+function copyBasePage(blogName) {
+    const baseFile = fs.readFileSync(`${htmlPagePath}/base-page.html`, 'utf8'); 
+    fs.writeFileSync(`${htmlPagePath}/${blogName}.html`, baseFile); 
+}
+
+function main() {
+}
+
+if (require.main === module) {
+  main();
+}
+
 
 
 
