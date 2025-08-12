@@ -32,7 +32,7 @@ fetch('/configuration/notes.json')
             var blogAbout = `<p class="blog-about">${post.description}</p>`;
             if (currentSeason != previousSeason || currentYear != previousYear) {
                 var dateHeading = `<h3>${currentSeason} ${currentYear}</h3>`; 
-                var spacer = `<div style="height: 25px;"></div>`;
+                var spacer = `<div style="height: 20px;"></div>`;
                 currentBlog.innerHTML = dateHeading + spacer + blogTitle + blogAbout;  
             } else {
                 currentBlog.innerHTML = blogTitle + blogAbout;  
