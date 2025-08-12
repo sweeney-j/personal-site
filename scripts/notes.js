@@ -30,12 +30,22 @@ fetch('/configuration/notes.json')
             // TODO: The path in the json should be relative to this file 
             var blogTitle = `<a href="/pages/thoughts/html-pages/${post.name}.html"<h2 class="blog-heading">${post.title}</h2></a>`; 
             var blogAbout = `<p class="blog-about">${post.description}</p>`;
+            var spacer = `<div style="height: 20px;"></div>`;
             if (currentSeason != previousSeason || currentYear != previousYear) {
                 var dateHeading = `<h3>${currentSeason} ${currentYear}</h3>`; 
-                var spacer = `<div style="height: 20px;"></div>`;
-                currentBlog.innerHTML = dateHeading + spacer + blogTitle + blogAbout;  
+                if (uniqueId > 0) {
+                    currentBlog.innerHTML = spacer + dateHeading + spacer + blogTitle + blogAbout;  
+                    previousSeason = currentSeason; 
+                    previousYear = currentYear; 
+                } else {
+                    currentBlog.innerHTML = dateHeading + spacer + blogTitle + blogAbout;  
+                    previousSeason = currentSeason; 
+                    previousYear = currentYear; 
+                }
             } else {
-                currentBlog.innerHTML = blogTitle + blogAbout;  
+                currentBlog.innerHTML = spacer + blogTitle + blogAbout;  
+                previousSeason = currentSeason; 
+                previousYear = currentYear; 
             }
             uniqueId += 1; 
         }); 
