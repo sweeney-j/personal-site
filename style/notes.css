@@ -13,6 +13,11 @@
   color: var(--headers); 
 }
 
+h3 {
+  font-weight: 400; 
+  font-size: 16px;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0; 
