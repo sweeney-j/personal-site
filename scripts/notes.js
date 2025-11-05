@@ -28,7 +28,7 @@ fetch('/configuration/notes.json')
             postList.innerHTML += blogClassName;
             var currentBlog = document.querySelector(`.blog-${uniqueId}`); 
             // TODO: The path in the json should be relative to this file 
-            var blogTitle = `<a href="/pages/thoughts/html-pages/${post.name}.html"<h2 class="blog-heading">${post.title}</h2></a>`; 
+            var blogTitle = `<a href="/pages/thoughts/html-pages/${post.name}.html"><h2 class="blog-heading">${post.title}</h2></a>`; 
             var blogAbout = `<p class="blog-about">${post.description}</p>`;
             var spacer = `<div style="height: 20px;"></div>`;
             if (currentSeason != previousSeason || currentYear != previousYear) {

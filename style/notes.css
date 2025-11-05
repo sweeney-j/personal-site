@@ -1,4 +1,4 @@
-@import 'color-scheme.css'; 
+@import '/style/color-scheme.css'; 
 
 #posts {
     opacity: 0; 
@@ -6,11 +6,97 @@
     margin-top: 30px;
 }
 
+#posts > div {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+#posts > div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .blog-heading {
   font-size: 24px; 
   text-decoration: none; 
-  font-weight: normal;
-  color: var(--headers); 
+  font-weight: 500;
+  color: var(--headers);
+  transition: color 0.2s ease;
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.blog-heading:hover {
+  color: var(--links-hover);
+}
+
+.blog-about {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin-top: 4px;
+    line-height: 1.6;
+}
+
+#content-container {
+    margin-top: 30px;
+}
+
+#content-container h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: var(--headers);
+}
+
+#content-container h3 {
+    font-size: 22px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: var(--headers);
+}
+
+#content-container p {
+    margin-bottom: 1.2em;
+    color: var(--text-primary);
+}
+
+#content-container a {
+    color: var(--links);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#content-container a:hover {
+    color: var(--links-hover);
+    text-decoration: underline;
+}
+
+#content-container code {
+    background-color: var(--background);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9em;
+}
+
+#content-container pre {
+    background-color: var(--background);
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+}
+
+#content-container ul, #content-container ol {
+    margin-bottom: 1.2em;
+    padding-left: 24px;
+}
+
+#content-container li {
+    margin-bottom: 0.5em;
+    color: var(--text-primary);
 }
 
 h3 {
