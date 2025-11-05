@@ -1,5 +1,13 @@
 :root {
-    --background: #F0E5D8; 
-    --headers: #9B2226; 
-    --links: #9B2226; 
+    /* Modern color palette */
+    --background: #FAFAFA;
+    --surface: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #6B7280;
+    --headers: #1E40AF;
+    --links: #3B82F6;
+    --links-hover: #2563EB;
+    --accent: #10B981;
+    --border: #E5E7EB;
+    --shadow: rgba(0, 0, 0, 0.05);
 }

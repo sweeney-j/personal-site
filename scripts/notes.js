@@ -8,7 +8,7 @@ fetch('/configuration/notes.json')
             postList.innerHTML += blogClassName;
             var currentBlog = document.getElementsByClassName(`blog-${uniqueId}`); 
             // TODO: The path in the json should be relative to this file 
-            var blogTitle = `<a href="thoughts/html-pages/${post.name}"<h2 class="blog-heading">${post.title}</h2></a>`; 
+            var blogTitle = `<a href="/pages/thoughts/html-pages/${post.name}.html"><h2 class="blog-heading">${post.title}</h2></a>`; 
             var blogAbout = `<p class="blog-about">${post.description}</p>`;
             currentBlog[0].innerHTML = blogTitle + blogAbout; 
             uniqueId += 1; 
